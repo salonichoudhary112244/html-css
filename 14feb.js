@@ -21,7 +21,7 @@ else{
 }*/
 
 
-
+// cube and ^r2
 
 
 let num=parseInt(prompt("enter a num"))
