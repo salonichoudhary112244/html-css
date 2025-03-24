@@ -112,3 +112,4 @@ let person3={
 let k1=Object.values(person3)
 
 console.log(k1[0]);
+
