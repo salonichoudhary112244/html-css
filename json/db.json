@@ -1,0 +1,34 @@
+{
+"whatsapp":[
+    {
+    "name":"saloni",
+    "age":"20",
+    "adharno":"3210009876",
+    "checkin":"01-02-2025",
+    "checkout":"04-02-2025",
+    "mobailno":"6264919654",
+    "person":"3",
+    "price":"1500",
+    },
+    {
+        "name":"ritika",
+        "age":"21",
+        "adharno":"321098765",
+        "checkin":"01-02-2025",
+        "checkout":"04-02-2025",
+        "mobailno":"6264919884",
+        "person":"4",
+        "price":"2000",
+        },
+        {
+            "name":"shivani",
+            "age":"25",
+            "adharno":"32100095432",
+            "checkin":"01-02-2025",
+            "checkout":"04-02-2025",
+            "mobailno":"6264919654",
+            "person":"5",
+            "price":"2500",
+            },
+]
+}
