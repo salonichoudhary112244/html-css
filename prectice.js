@@ -222,3 +222,14 @@
 
 
 
+let object= {
+    name:"saloni",
+    contact:1234,
+    obfun:function () {
+        alert("working")
+    },
+    car:["BMWE","AUDI","SIFT"],
+  }
+  
+  object.obfun()
+  console.log(object.car[1]);
