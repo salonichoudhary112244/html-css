@@ -24,10 +24,18 @@ else{
 // cube and ^r2
 
 
-let num=parseInt(prompt("enter a num"))
-if(num%2==0){
-    console.log(num*num*num)
+// let num=parseInt(prompt("enter a num"))
+// if(num%2==0){
+//     console.log(num*num*num)
+// }
+// else{
+//     console.log(3.14*num*num)
+// }
+
+let num=parseInt(prompt*("num"))
+if(num%2!=0){
+    console.log(num*num);
 }
 else{
-    console.log(3.14*num*num)
+  console.log(num+num);
 }
