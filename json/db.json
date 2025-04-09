@@ -8,7 +8,7 @@
     "checkout":"04-02-2025",
     "mobailno":"6264919654",
     "person":"3",
-    "price":"1500",
+    "price":"1500"
     },
     {
         "name":"ritika",
@@ -18,7 +18,7 @@
         "checkout":"04-02-2025",
         "mobailno":"6264919884",
         "person":"4",
-        "price":"2000",
+        "price":"2000"
         },
         {
             "name":"shivani",
@@ -28,7 +28,7 @@
             "checkout":"04-02-2025",
             "mobailno":"6264919654",
             "person":"5",
-            "price":"2500",
-            },
+            "price":"2500"
+            }
 ]
 }
