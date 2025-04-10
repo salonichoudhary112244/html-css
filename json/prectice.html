@@ -4,8 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            background-color: blueviolet;
+        }
+        table{
+            background-color: whitesmoke;
+            border-color: red;
+            text-align: center;
+        }
+    </style>
 </head>
-<body>
-    
+<body onload="fetchData()">
+    <table border="1">
+         <thead>
+            <tr>
+                <th>name</th>
+                <th>age</th>
+                <th>adhar</th>
+                <th>chechin</th>
+                <th>checkout</th>
+                <th>country</th>
+                <th>person</th>
+                <th>total</th>
+                <th>delete</th>
+                <th>update</th>
+            </tr>
+         </thead>
+         <tbody id="datashow">
+
+         </tbody>
+    </table>
+    <div id="data2">
+        
+    </div>
+    <script src="prectice.js"></script>
 </body>
 </html>

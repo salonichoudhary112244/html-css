@@ -4,8 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            background-color: beige;
+            text-align: center;
+        }
+        #form{
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    
+      <form action="" id="form">
+        Enter name: <input type="text" id="name"><br><br>
+        Enter age: <input type="number" id="age"><br><br>
+        Enter aadharno: <input type="text" id="adhar"><br><br>
+        Enter checkin: <input type="date" id="checkin"><br><br>
+        Enter checkout: <input type="date" id="checkout"><br><br>
+        Enter mobileno: <input type="text" id="mobile"><br><br>
+        choose country:
+        <select  id="country">
+            <option value="india">india</option>
+            <option value="india">china</option>
+            <option value="india">usa</option>
+            <option value="india">nepal</option>
+            <option value="india">canada</option>
+        </select><br><br>
+        Enter person:<input type="text" id="person"><br><br>
+        <input type="submit" value="book now" onclick="return book()">
+      </form>
+      <script src="prectice.js"></script>
 </body>
 </html>
