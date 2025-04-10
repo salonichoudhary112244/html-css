@@ -21,8 +21,12 @@
 
 let fetchData=async()=>{
     let url='http://localhost:3000/whatsapp'
+
     let res= await fetch(url,{method:"GET"})
+
     let data=await res.json()
+
+
     console.log(data);
 
     let show=document.getElementById('datashow')
@@ -40,7 +44,7 @@ let fetchData=async()=>{
                         <td>${e.person}</td>
                           <td>${e.price*e.person}</td>
                             <td onclick="del('${e.id}')">Delete</td>
-                               <td onclick="gormfill('${e.id}')">update</td>
+                               <td onclick="Formfill('${e.id}')">update</td>
           </tr>
         `
     })
@@ -51,6 +55,7 @@ let fetchData=async()=>{
 let del=(id)=>{
 
     let url=`http://localhost:3000/whatsapp/${id}`
+
     fetch(url,{method:"DELETE"} )
 }
 
@@ -94,8 +99,8 @@ let book=()=>{
 
 
 
-let formFill=async(id)=>{
-    let url='http://localhost:3000/whatsapp'
+let FormFill=async(id)=>{
+    let url=`http://localhost:3000/whatsapp/${id}`
     let res= await fetch(url,{method:"GET"})
     let data=await res.json()
     console.log(data);
@@ -119,11 +124,44 @@ let formFill=async(id)=>{
             <option value="india">canada</option>
         </select><br><br>
         Enter person:<input type="text" id="upperson" value="${data.person}><br><br>
-        <input type="submit" value="update now" onclick="return FinalUpdate ('${data.name}')">
+        <input type="submit" value="update now" onclick="return FinalUpdate ('${data.id}')">
 
     `
 }
 
 
 
-let
+let FinalUpdate=(id)=>{
+    let inpname=document.getElementById('upname').Value
+    let inpage=document.getElementById('upage').Value
+    let inpaadharno=document.getElementById('upadhar').Value
+    let inpcheckout=document.getElementById('upcheckin').Value
+    let inpmobileno=document.getElementById('upmobile').Value
+    let inpcountry=document.getElementById('upcountry').Value
+    let inpperson=document.getElementById('upperson').Value
+    
+    let url=`http://localhost:3000/whatsapp/${id}`
+
+    fetch(url,{
+        method:"PUT",
+        headers:{
+            "content-type":"application/json"
+        },
+        body:JSON.stringify(
+            {
+                "name":inpname,
+                "age":inpage,
+                "aadharno":inpaadharno,
+                "checkin":inpcheckin,
+                "checkout":inpcheckout,
+                "mobileno":inpmobileno,
+                "country":inpcountry,
+                "person":inpperson,
+                "price":500
+            }
+        )
+    })
+
+    location.href="prectice.html"
+    return false
+}
