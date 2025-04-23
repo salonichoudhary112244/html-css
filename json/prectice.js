@@ -26,7 +26,6 @@ let fetchData=async()=>{
 
     let data=await res.json()
 
-
     console.log(data);
 
     let show=document.getElementById('datashow')
@@ -49,7 +48,6 @@ let fetchData=async()=>{
         `
     })
 }
-
 
 
 let del=(id)=>{
@@ -96,7 +94,6 @@ let book=()=>{
     return false
 
 }
-
 
 
 let FormFill=async(id)=>{
